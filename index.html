@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping Form</title>
+
+    <style>
+        body {
+            font-family: Arial;             
+            background-color: lightcyan;   
+        }
+
+        h2 {
+            color: darkgreen;              
+        }
+
+        label {
+            color: darkblue;              
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h2>Online Shopping Order Form</h2>
+
+<form>
+
+    <label for="cname">Customer Name:</label><br>
+    <input type="text" id="cname" name="cname" required><br>
+
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="text"
+           id="mobile"
+           name="mobile"
+           pattern="[0-9]{10}"
+           required
+           ><br>
+
+
+    <label>Choose Product:</label><br>
+
+    <input type="radio" id="laptop" name="product" value="Laptop" required>
+    <label for="laptop">Laptop</label>
+
+    <input type="radio" id="mobilep" name="product" value="Mobile">
+    <label for="mobilep">Mobile</label>
+
+    <input type="radio" id="headphone" name="product" value="Headphone">
+    <label for="headphone">Headphone</label>
+
+    <input type="radio" id="keyboard" name="product" value="Keyboard">
+    <label for="keyboard">Keyboard</label>
+    <br><br>
+
+
+    <label for="qty">Quantity:</label><br>
+    <input type="text"
+           id="qty"
+           name="qty"
+           pattern="[0-9]+"
+           required
+          ><br>
+
+
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" required><br>
+
+
+    <label>Payment Method:</label><br>
+
+    <input type="radio" id="cod" name="payment" value="COD" required>
+    <label for="cod">Cash on Delivery</label>
+
+    <input type="radio" id="card" name="payment" value="Card">
+    <label for="card">Card</label>
+
+    <input type="radio" id="upi" name="payment" value="UPI">
+    <label for="upi">UPI</label>
+    <br><br>
+
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">Confirm Order</label>
+    <br><br>
+
+
+    <input type="submit" value="Place Order">
+
+</form>
+
+</body>
+</html>
